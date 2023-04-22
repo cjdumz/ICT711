@@ -1,0 +1,25 @@
+Taylor Swift
+1989-12-13
+04324560
+Gold
+90.0
+Ariana Grande
+1992-03-03
+04123455
+Silver
+60.0
+Katy Perry
+1988-05-21
+04176322
+Bronze
+80.0
+Harry Styles
+1988-05-05
+04176444
+Gold
+90.0
+Jojo Cruz
+2005-05-03
+04090536
+Gold
+30.0

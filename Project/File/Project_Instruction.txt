@@ -1,0 +1,49 @@
+When the HCMM system starts up, it assumes that the system has the members’ information as given in
+the membersFile, and it manages the records according to the instructions in the instructionFile.
+
+• membersFile contains a list of members with basic information in a predefined format.
+• instructionFile lists instructions/commands to be performed in order on members. The
+instructions/commands can be: "add", "delete", " query " and "save".
+
+• HCMM system must check whether this is an existing member:
+o if there is already a record with the same name and mobile in the system, the existing
+record should be updated/merged with the new valid input information;
+o otherwise system adds a new member with valid info to the system.
+• For instance, the instruction:
+
+add name James Bloggs; birthday 20/12/1978; pass Gold; mobile 04111111; fee $60
+is supposed to add/update a member with name "James Bloggs", birthday 20/12/1978,
+membership pass type "Gold", membership fee $60, and the specified mobile information.
+Note the use of a semicolon (";") to separate the fields.
+
+• For instance, the instruction:
+delete James Bloggs; 04112541
+indicates deleting the member whose name is James Bloggs and mobile is 04112541 from
+the system.
+
+Query results from different queries should be appended and separated by dash lines.
+
+a) Query the membership records of a given pass type and calculate the total membership fees.
+For queries with more than one member in query results, sort the results in ascending order of
+name. When there is more than one member with the same name, sort the results in ascending
+order of mobile numbers. The format of the query instruction is listed below:
+o query pass Silver
+b) Query the age-based fee income distribution and save the query results to the reportFile. The
+format of the instruction is listed below:
+o query age fee
+the results should be appended to reportFile with format as below:
+----query age fee----
+Total Club Member size: 50
+Age based fee income distribution
+(0,7]: $30.00
+(8,17]: $120.50
+(18,65]: $900.00
+(65,-): $50.50
+Unknown: $0.00
+----------------------
+
+• Write the resulting data collection of the instructions of “add”, “delete” and “sort” into the
+specified resultFile.
+• Write the query results into another specified reportFile. When there are more than one
+“query” commands, append the latest results to the end of the reportFile. Separate the results of
+different query instructions using dash lines with query instructions.

@@ -1,0 +1,4 @@
+add name James Bloggs; birthday 1978-12-20; mobile 04111111; pass Gold; fee 60.0
+query pass Silver
+query age fee
+add name Jojo Cruz; birthday 2005-05-03; mobile 04090536; pass Gold; fee 30.0
